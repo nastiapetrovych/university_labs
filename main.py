@@ -25,6 +25,8 @@ def reading_file(path, year):
     :param path: str
     :param year: str
     :return: list
+    >>> reading_file('new1.txt', '2006')[:2]
+    [['#1 Single', '2006', ' California'], ['#1 Single', '2006', ' New York']]
     """
     with open(path, 'r', encoding='utf -8') as file:
         lst = []
@@ -57,6 +59,8 @@ def coordinates(lst_with_locations_, my_coordinates):
     :param lst_with_locations_: list
     :param my_coordinates: tuple
     :return: list
+    >>> coordinates(([['#1 Single', '2006', ' California']]), (48.8566, 2.3522))
+    [(8892.703434437872, [['#1 Single', ' California', (36.7014631, -118.755997)]])]
     """
     new_lst = []
     for element in lst_with_locations_:
