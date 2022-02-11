@@ -82,7 +82,7 @@ def coordinates(lst_with_locations_, my_coordinates):
     dictionary_items = my_dict.items()
     sorted_items = sorted(dictionary_items)
     if len(sorted_items) > 10:
-        sorted_items = sorted_items[:9]
+        sorted_items = sorted_items[:10]
     return sorted_items
 
 
